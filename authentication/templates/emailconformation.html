@@ -1,0 +1,11 @@
+{% autoescape off %}
+
+Welcome to Djano Login.
+
+Hello {{ name }}!
+
+Please conform your email by clicking on the following link.
+
+Conformation Link: http://{{ domain }}{% url 'activate' uid64=uid token=token %}  
+
+{% endautoescape %}

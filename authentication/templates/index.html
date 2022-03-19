@@ -1,0 +1,15 @@
+{% extends 'basic.html' %}
+
+{% block title%} Home {% endblock %}
+
+{% block body %}
+
+
+<!--authentication part-->
+{% if user.is_authenticated %}
+<h1>Welcome {{ name }}</h1>
+<button type="submit"><a href="signout">Signout</a></button>
+{% endif %}
+
+
+{% endblock %}
